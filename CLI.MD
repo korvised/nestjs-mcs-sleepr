@@ -3,7 +3,7 @@
 nest generate library common
 ```
 
-# Generate Module
+# Generate Common Module
 ```shell
 # Generate module
 # database is the name of the module
@@ -14,4 +14,14 @@ nest generate module database -p common
 
 # Generate config module
 nest generate module config -p common
+```
+# Generate Microservice
+```shell
+# Generate microservice
+nest g app reservations
+```
+
+# Generate Service
+```shell
+nest g service resolvers reservations
 ```

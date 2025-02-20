@@ -23,5 +23,5 @@ nest g app reservations
 
 # Generate Service
 ```shell
-nest g service resolvers reservations
+nest g resource reservations
 ```

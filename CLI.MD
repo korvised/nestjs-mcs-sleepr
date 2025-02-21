@@ -17,8 +17,13 @@ nest generate module config -p common
 ```
 # Generate Microservice
 ```shell
-# Generate microservice
+# Generate reservations service
 nest g app reservations
+# Generate auth service
+nest g app auth
+nest g module users
+nest g service users
+nest g controller users
 ```
 
 # Generate Service

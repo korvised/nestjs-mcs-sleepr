@@ -1,6 +1,16 @@
 services:
   mongo:
     image: mongo
+  auth:
+    build:
+      context: .
+      dockerfile: ./apps/auth/Dockerfile
+      target: development
+    command: pnpm run start:dev auth
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/usr/src/app
   reservations:
     build:
       context: .
